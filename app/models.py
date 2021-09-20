@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 
 class UserProfileInfo(models.Model):
-  user = models.OneToOneField(User)
+  users = models.OneToOneField(User)
   portfolio = models.URLField(blank=True)
   profile_pic = models.ImageField(upload_to='profile_pic',blank=True)
   
